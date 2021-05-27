@@ -1,0 +1,119 @@
+:root{
+    --vermelho: #E50914;
+    --preto: #141414;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+/* ELEMENTOS BASE */
+
+body{
+    background: var(--preto);
+    font-family: 'Times New Roman', Times, serif;
+    color: whitesmoke;
+}
+
+header .container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content:start;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+header .logo{
+    margin-left: 5px;
+    color: var(--vermelho);
+    font-family: 'Arial Black', Times;
+    font-size: 25px;
+    padding-right: 50px;
+}
+
+header nav a{
+    text-decoration: none;
+    color: #AAA;
+    margin-right: 10px;
+    font-family: 'Arial', Times;
+    font-size: 14px;
+}
+
+header nav a:hover{
+    color: #fff;
+}
+
+/* FILME PRINCIPAL */
+
+.filme-principal{
+    font-size: 16px;
+    background:linear-gradient(to right,rgba(0,0,0,.60), rgba(0,0,0,.20)100%), url('/img/fundo-hdm.jpg');
+
+    height: 500px;
+    background-size:cover;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.filme-principal .descricao{
+    margin-top: 10px;
+    margin-bottom: 40px;
+    text-align: justify;
+    padding-right: 20%;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 15px;
+}
+
+.hdm{
+    display: flex;
+    margin-top: 10%;
+    height: 100px;
+    margin-bottom: 30px;
+
+}
+
+.botao{
+    background-color: rgba(0,0,0,.50);
+    border: none;
+    border-radius: 5px;
+    color: white;
+
+    padding: 15px 30px;
+    margin-right: 13px;
+    font-size: 12px;
+
+    cursor: pointer;
+    transition: .5s ease all;
+
+}
+
+.botao:hover{
+    background-color: white;
+    color: black;
+}
+
+.botao i{
+    margin-right: 8px;
+}
+
+.container{
+    margin-left: 20px;
+    
+}
+
+.filme-principal .container{
+    width: 60%;
+}
+
+.box-filme{
+    height: 100%;
+    width: 100%;
+    display: block;
+}
